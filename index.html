@@ -16,14 +16,14 @@
 
         :root {
             --bg-dark: #000000;
-            --primary: #00ff22;
-            --primary-dark: #00cc00;
+            --primary: #50F2B7;
+            --primary-darker: #07b67b;
+            --primary-dark: #44F2A1;
             --primary-light: #33ff33;
-            --text-light: #ffffff;
+            --text-light: #F2F2F2;
             --text-gray: #cccccc;
             --card-bg: rgba(17, 17, 17, 0.85);
             --border-color: #222222;
-            --glow: 0 0 15px rgba(0, 255, 0, 0.7);
         }
 
         body {
@@ -105,13 +105,11 @@
             background: linear-gradient(90deg, var(--primary), #fff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: var(--glow);
         }
 
         .logo-icon {
             font-size: 50px;
             color: var(--primary);
-            text-shadow: var(--glow);
             height: 120px;
         }
 
@@ -119,9 +117,19 @@
             font-size: 3.5rem;
             margin-bottom: 20px;
             font-family: 'Orbitron', sans-serif;
-            text-shadow: var(--glow);
             animation: fadeIn 1.2s ease forwards;
             background: linear-gradient(90deg, var(--primary), #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 20px;
+        }
+
+        .predTitle{
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-family: 'Orbitron', sans-serif;
+            animation: fadeIn 1.2s ease forwards;
+            background: linear-gradient(90deg, var(--primary-darker), #fff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-top: 20px;
@@ -158,7 +166,6 @@
 
         .feature-card:hover {
             transform: translateY(-10px);
-            box-shadow: var(--glow);
             border-color: var(--primary);
         }
 
@@ -170,14 +177,12 @@
             width: 100%;
             height: 4px;
             background: var(--primary);
-            box-shadow: var(--glow);
         }
 
         .feature-icon {
             font-size: 50px;
             color: var(--primary);
             margin-bottom: 20px;
-            text-shadow: var(--glow);
         }
 
         .feature-title {
@@ -209,7 +214,6 @@
         .social-links a:hover {
             color: var(--primary);
             transform: translateY(-5px);
-            box-shadow: var(--glow);
             border-color: var(--primary);
         }
 
@@ -238,7 +242,7 @@
             animation: float 15s infinite linear;
         }
 
-        /* Animations */
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
@@ -279,7 +283,7 @@
     </style>
 </head>
 <body>
-<!-- Видео фон -->
+
 <div class="video-background">
     <video autoplay muted loop playsinline>
         <source src="https://assets.mixkit.co/videos/preview/mixkit-futuristic-interface-with-touch-controls-1278-large.mp4" type="video/mp4">
@@ -298,9 +302,11 @@
         <h1>Kognera<span style="color: var(--primary);">AI</span></h1>
     </div>
 
-    <h1 class="title">Čoskoro spustíme</h1>
-    <p class="subtitle">Pripravujeme pre vás revolučnú platformu využívajúcu umelú inteligenciu. Zanechajte svoj e-mail a budeme vás informovať o spustení.</p>
+    <h1 class="title">Kognera AI – Už čoskoro</h1>
+    <p class="subtitle">Prinášame revolúciu v nasadzovaní umelej inteligencie do biznisu.
+        Naša misia je zefektívniť procesy, zvýšiť produktivitu a priniesť nové príležitosti prostredníctvom AI riešení.</p>
 
+    <h1 class="predTitle">Čo pripravujeme:</h1>
     <div class="features">
         <div class="feature-card">
             <div class="feature-icon">
