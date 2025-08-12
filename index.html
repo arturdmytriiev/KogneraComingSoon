@@ -164,6 +164,33 @@
             box-shadow: 0 5px 25px rgba(0,0,0,0.3);
         }
 
+        .feature-card_back{
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px 25px;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(5px);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+        }
+
+        .feature-card_back:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .feature-card_back::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary);
+        }
+
         .feature-card:hover {
             transform: translateY(-10px);
             border-color: var(--primary);
@@ -305,31 +332,28 @@
     <h1 class="title">Kognera AI – Už čoskoro</h1>
     <p class="subtitle">Prinášame revolúciu v nasadzovaní umelej inteligencie do biznisu.
         Naša misia je zefektívniť procesy, zvýšiť produktivitu a priniesť nové príležitosti prostredníctvom AI riešení.</p>
-
     <h1 class="predTitle">Čo pripravujeme:</h1>
+
     <div class="features">
         <div class="feature-card">
             <div class="feature-icon">
                 <i class="fas fa-robot"></i>
             </div>
-            <h3 class="feature-title">AI Technológie</h3>
-            <p class="feature-desc">Ponúkame špičkové riešenia využívajúce najnovšie technológie umelej inteligencie.</p>
+            <h3 class="feature-title">Vlastné GPT boty a inteligentní asistenti</h3>
         </div>
 
         <div class="feature-card">
             <div class="feature-icon">
                 <i class="fas fa-lightbulb"></i>
             </div>
-            <h3 class="feature-title">Inovatívne Riešenia</h3>
-            <p class="feature-desc">Naša platforma prináša inovatívny prístup k riešeniu komplexných problémov.</p>
+            <h3 class="feature-title">AI automatizácia procesov pre firmy</h3>
         </div>
 
-        <div class="feature-card">
+        <div class="feature-card_back">
             <div class="feature-icon">
-                <i class="fas fa-rocket"></i>
+                <i class="fas fa-gear"></i>
             </div>
-            <h3 class="feature-title">Rýchle Spustenie</h3>
-            <p class="feature-desc">Pracujeme na čo najrýchlejšom spustení pre našich prvých používateľov.</p>
+            <h3 class="feature-title"> AI marketingové nástroje a personalizácia</h3>
         </div>
     </div>
 
